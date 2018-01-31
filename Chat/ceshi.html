@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>滚动</title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<style type="text/css">
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript">
+		</script>
+	</head>
+
+	<body>
+		<div id="div_content" class="div_content" style="overflow:hidden;">
+
+			<div id="div_showContent_body" class="div_showContent_body">
+				<div id="left_content" class="left_content">
+					<div id="div_img_lift">
+						<img src="img/user.png" />
+					</div>
+					<div class="div_span_content_left">
+						测试布局展示
+					</div>
+				</div>
+
+				<div id="right_content" class="right_content">
+
+					<div class="div_span_content_right">
+						测试布局展示
+					</div>
+					<div class="div_img_right">
+						<img src="img/custom service.png" />
+					</div>
+				</div>
+					<div id="right_content" class="right_content">
+
+					<div class="div_span_content_right">
+						测试布局展示
+					</div>
+					<div class="div_img_right">
+						<img src="img/custom service.png" />
+					</div>
+				</div>
+			</div>
+			<div class="div_stance" />
+		</div>
+		<input type="button" id="gundong" value="滚动" />
+
+		<script type="text/javascript">
+		var drawLetters = document.getElementById("div_content");
+　　　　var dl = document.getElementById("div_showContent_body");
+　　　　var speed = 20; //滚动速度值，值越大速度越慢
+　　　　function Marquee() {
+            var a= $("#div_showContent_body").height();
+         　　　　var newNode = document.createElement("div"); 
+　　　　　　newNode.innerHTML = dl.innerHTML;
+　　　　　　drawLetters.insertBefore(newNode,null); 
+　　　　　　drawLetters.scrollTop++
+
+　　　　}
+			
+		$("#gundong").click(function () {
+			Marquee();
+			
+			
+		})	 
+
+			
+		</script>
+	</body>
+
+</html>

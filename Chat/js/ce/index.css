@@ -1,0 +1,150 @@
+.div_input {
+	background: lightgrey;
+	width: 100%;
+	height: 48px;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.img_sound {
+	width: 30px;
+	height: 30px;
+}
+
+.div_img {
+	height: 100%;
+	margin: 10px;
+}
+
+.div_box {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.input_box {
+	line-height: 32px;
+	display: block;
+	height: 32px;
+	width: 100%;
+	font-size: 18px;
+}
+
+.css_down_span {
+	border: 1px solid #a1a1a1;
+	display: none;
+	height: 30px;
+	width: 100%;
+	color: #A1A1A1;
+	background: white;
+	text-align: center;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.div_send {
+	width: 80px;
+	height: 48px;
+	line-height: 48px;
+	align-content: center;
+}
+
+.span_send {
+	margin: 6px;
+	padding: 4px;
+}
+
+.span_send:hover {
+	background: darkgray;
+}
+
+.span_send:active {
+	background: darkgray;
+}
+
+.div_content {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.search_title {
+	height: 30%;
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+}
+
+.div_showContent_body {
+	width: 100%;
+	position: absolute;
+	overflow: auto;
+	top: 30%;
+	z-index: 10;
+	bottom: 50px;
+
+}
+
+.left_content {
+	display: flex;
+}
+
+.right_content {
+  display: flex;
+  position: absolute;
+  right: 0px;
+}
+
+.div_img_lift {
+	width: 40px;
+	padding-right: 8px;
+}
+.div_img_right{
+	width: 40px;
+	padding-left: 8px;
+
+}
+
+.div_span_content_left {
+   text-align: left;
+	padding: 8px;
+	background: aquamarine;
+	word-break: break-all;
+	z-index: 10;
+	margin-left: 10px;
+	position: relative;
+	border-radius: 8px;
+}
+
+.div_span_content_right {
+	text-align: right;
+	padding: 8px;
+	background: aquamarine;
+	word-break: break-all;
+	z-index: 10;
+	margin-left: 10px;
+	position: relative;
+	border-radius: 8px;
+	
+}
+
+.div_span_content_right:before {
+	content: "";
+	position: absolute;
+	left: 100%;
+	margin-top: 2px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent transparent chartreuse;
+}
+.div_span_content_left:before {
+	content: " ";
+	position: absolute;
+	right: 100%;
+	margin-top: 2px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent chartreuse transparent transparent;
+}

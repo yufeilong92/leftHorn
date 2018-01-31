@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			.span_right {
+               text-align: left;
+               padding: 8px;
+             
+				background: aquamarine;
+				word-break: break-all;
+				z-index: 10;
+				margin-left: 10px;
+				position: relative;
+			    border-radius: 8px;
+			}
+			.span_right:before{
+				content: "";
+				right: 100%;
+				position: absolute;
+				border-style: solid;
+				border-width: 8px;
+				border-color:transparent  red transparent transparent;  
+			}
+			.img_left {
+				width: 40px;
+				padding: 8px;
+			}
+			
+			.div_lift {
+			display: flex;
+			
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="div_lift">
+           <div class="img_left">
+           		<img src="img/custom service.png" />
+           </div>
+			<div class="span_right">1313156111122222222222222222222222222222222222222222244444444444444
+			</div>
+		</div>
+	</body>
+	<div class="div_lift">
+           <div class="img_left">
+           		<img src="img/custom service.png" />
+           </div>
+			<div class="span_right">1313156111122222222222222222222222222222222222222222244444444444444
+			</div>
+		</div>
+	</body>
+</html>
